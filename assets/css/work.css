@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Nunito:wght@900&display=swap');
+
+
+
+
+
+
+
+
+
+
+#sub-header {
+	padding: 10rem 0 5rem 0;
+}
+
+#sub-header h1 {
+	font-family: 'Fuzzy Bubbles', cursive;
+	font-family: 'Nunito', sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	color: #fff;
+}
+
+#sub-header h1>span {
+	color: #dc3545;
+}
+
+
+.lw-link>a {
+	color: #222;
+}
+._windows{
+	box-shadow: 5px 5px 10px 0 rgb(226 212 212 / 50%);
+}
+.windows {
+	width: 500px;
+	margin: auto;
+	cursor: n-resize;
+	padding: 2rem 1rem;
+}
+
+.windows img {
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+	height:700px;
+	transition: 8s all ease;
+	
+}
+
+.windows img:hover {
+	object-position: bottom;
+}
+.lw-links{
+	margin: 2rem 0 ;
+}
+.lw-links>a span {
+	color: #dc3545;
+}
+
+.lw-links>a {
+	color: #222;
+	margin: 0 1em;
+	transition: .2s;
+
+}
+
+.lw-links>a:hover {
+	color: #dc3545;
+}
+
+.lw-links>a span {
+	margin: 0 0.5em;
+}
+
+
+#particles-js-three {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
