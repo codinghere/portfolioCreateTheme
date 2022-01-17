@@ -57,8 +57,66 @@
 })(jQuery);
 
 
+// progressbar
+(function ($) {
+	$(document).ready(function () {
+    'use strict';
+    $.fn.rProgressbar = function(options) {
+        options = $.extend({ percentage: null, ShowProgressCount: true, duration: 1000, fillBackgroundColor: '#ed1c24', backgroundColor: '#EEEEEE', borderRadius: '0px', height: '10px', width: '100%' }, options);
+        $.options = options;
+        return this.each(function(index, el) {
+            $(el).html('<div class="progressbar"><div class="proggress"></div><div class="percentCount"></div></div>');
+            var lineProgressBarInit = function() {
+                var progressFill = $(el).find('.proggress');
+                var progressBar = $(el).find('.progressbar');
+                progressFill.css({ backgroundColor: options.fillBackgroundColor, height: options.height, borderRadius: options.borderRadius });
+                progressBar.css({ width: options.width, backgroundColor: options.backgroundColor, borderRadius: options.borderRadius });
+                progressFill.animate({ width: options.percentage + "%" }, { step: function(x) { if (options.ShowProgressCount) { $(el).find(".percentCount").text(Math.round(x) + "%"); } }, duration: options.duration });
+            }
+            $(this).waypoint(lineProgressBarInit, { offset: '100%', triggerOnce: true });
+        });
+    }
+		
+	}); 
+})(jQuery);
+
+
+(function ($) {
+	$(document).ready(function () {
+    $('.html').rProgressbar({
+      percentage: 80,
+      fillBackgroundColor: '#ff014f'
+  });
+
+
+  $('.css').rProgressbar({
+      percentage: 90,
+      fillBackgroundColor: '#ff014f'
+  });
 
 
 
+  $('.php').rProgressbar({
+      percentage: 75,
+      fillBackgroundColor: '#ff014f'
+  });
 
+
+
+  $('.javascript').rProgressbar({
+      percentage: 65,
+      fillBackgroundColor: '#ff014f'
+  });
+
+
+
+  $('.jquery').rProgressbar({
+      percentage: 95,
+      fillBackgroundColor: '#ff014f',
+  
+  });
+
+		
+	}); 
+})(jQuery);
 
