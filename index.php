@@ -14,7 +14,7 @@
               <p>Shopify</p>
             </div>
             <div class="banner-title">
-              <h1>I design and build website.</h1>
+              <h1 style="color:white">I design and build website.</h1>
             </div>
             <div class="banner-content">
               <p>I work with individuals and businesses to create their own unique identity on the internet. </p>
