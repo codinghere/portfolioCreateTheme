@@ -25,36 +25,6 @@
 
 
  // Jquery Javascript Code implement
- (function ($) {
-	$(document).ready(function () {
-    
-  /*============ Testimonial ============*/ 
-  var owl = $('.slide-one-item');
-  $('.slide-one-item').owlCarousel({
-    center: false,
-    items: 1,
-    loop: true,
-    stagePadding: 0,
-    margin: 0,
-    smartSpeed: 1500,
-    autoplay: true,
-    dots: false,
-    nav: false,
-    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
-  });
-  $('.thumbnail li').each(function (slide_index) {
-    $(this).click(function (e) {
-      owl.trigger('to.owl.carousel', [slide_index, 1500]);
-      e.preventDefault();
-    })
-  })
-  owl.on('changed.owl.carousel', function (event) {
-    $('.thumbnail li').removeClass('active');
-    $('.thumbnail li').eq(event.item.index - 2).addClass('active');
-  })
-  
-	}); 
-})(jQuery);
 
 
 // progressbar
@@ -79,7 +49,6 @@
 		
 	}); 
 })(jQuery);
-
 
 (function ($) {
 	$(document).ready(function () {
@@ -118,6 +87,8 @@
 
 	}); 
 })(jQuery);
+
+//Qualification Tabs
 (function ($) {
 	$(document).ready(function () {
 		$(".tab-content-two").hide();
@@ -132,10 +103,10 @@
       $(".tab-content-three").hide();
       $(".tab-content-four").hide();
 
-      $(".item-one").addClass("active");
-      $(".item-two").removeClass("active");
-      $(".item-three").removeClass("active");
-      $(".item-four").removeClass("active");
+      $(".item-one").addClass("active2");
+      $(".item-two").removeClass("active2");
+      $(".item-three").removeClass("active2");
+      $(".item-four").removeClass("active2");
     })
         // for tab two
         $(".item-two").on("click",function(){
@@ -145,10 +116,10 @@
           $(".tab-content-three").hide();
           $(".tab-content-four").hide();
     
-          $(".item-one").removeClass("active");
-          $(".item-two").addClass("active");
-          $(".item-three").removeClass("active");
-          $(".item-four").removeClass("active");
+          $(".item-one").removeClass("active2");
+          $(".item-two").addClass("active2");
+          $(".item-three").removeClass("active2");
+          $(".item-four").removeClass("active2");
         })
          // for tab three
          $(".item-three").on("click",function(){
@@ -158,10 +129,10 @@
           $(".tab-content-three").show();
           $(".tab-content-four").hide();
     
-          $(".item-one").removeClass("active");
-          $(".item-two").removeClass("active");
-          $(".item-three").addClass("active");
-          $(".item-four").removeClass("active");
+          $(".item-one").removeClass("active2");
+          $(".item-two").removeClass("active2");
+          $(".item-three").addClass("active2");
+          $(".item-four").removeClass("active2");
         })
          // for tab four
          $(".item-four").on("click",function(){
@@ -171,12 +142,31 @@
           $(".tab-content-three").hide();
           $(".tab-content-four").show();
     
-          $(".item-one").removeClass("active");
-          $(".item-two").removeClass("active");
-          $(".item-three").removeClass("active");
-          $(".item-four").addClass("active");
+          $(".item-one").removeClass("active2");
+          $(".item-two").removeClass("active2");
+          $(".item-three").removeClass("active2");
+          $(".item-four").addClass("active2");
         })
 
 		
+	}); 
+})(jQuery);
+
+
+(function ($) {
+	$(document).ready(function () {
+    
+  /*============ Testimonial ============*/ 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    autoplay: true,
+    dots: true,
+    margin: 20,
+    smartSpeed: 1000,
+    nav: true
+
+})
+  
 	}); 
 })(jQuery);

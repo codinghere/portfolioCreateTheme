@@ -228,7 +228,7 @@
         <h2>My Resume</h2>
       </div>
     </div>
-        <!-- resume header -->
+    <!-- resume header -->
     <div class="row mt-5">
       <div class="col-lg-12">
         <div class="resume-tab shadow-lg p-3 mb-5 ">
@@ -249,7 +249,7 @@
         </div>
       </div>
     </div>
-<!-- education -->
+    <!-- education -->
     <div class="row mt-5 tab-content-one">
       <div class="row ms-2">
         <div class="col-lg-6">
@@ -261,7 +261,7 @@
           <h1>Job Experience</h1>
         </div>
       </div>
-      <div class="col-lg-12">
+      <div class="col-lg-12 col-sm-6">
         <div class="time-line">
           <div class="block">
             <div class="block-inner">
@@ -627,7 +627,6 @@
         </div>
       </div>
     </div>
-
   </div>
   </div>
 </section>
@@ -684,71 +683,102 @@
 <!-- Testimonial Start -->
 <section id="testimonial">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="slider-92911">
-          <span class="fp__testimonial_quote"> <i class="flaticon-quote-left"></i></span>
-          <div class="owl-carousel slide-one-item">
-            <div class="d-md-flex testimony-29101 align-items-stretch">
-              <div class="image"
-                style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/person_1.jpg');">
+    <div class="row">
+      <div class="global-title text-center">
+        <span style="color: #f9004d;">WHAT CLIENT SAY</span>
+        <h1>Testimonial</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-12">
+        <div class="owl-carousel owl-theme">
+        <div class="testimonial-section d-flex ">
+          <div class="testimonial-card">
+            <div class="card border-0 rounded"
+              style="width: 25rem; background-color: rgba(0,0,0,0.2); box-shadow:10px 10px 19px #131520, -10px -10px 19px #1c1f30;">
+              <div class="t-card-img m-4">
+                <img class="card-img-top"
+                  src="<?php echo get_template_directory_uri();?>/assets/img/final-home--5th.png" alt="Card image cap">
               </div>
-              <div class="text">
-                <blockquote>
-                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam
-                    obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum
-                    suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
-                  <div class="author">&mdash; Jean Stephen</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="d-md-flex testimony-29101 align-items-stretch">
-              <div class="image"
-                style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/person_2.jpg');">
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam
-                    obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum
-                    suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
-
-                  <div class="author">&mdash; Julia Smith</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="d-md-flex testimony-29101 align-items-stretch">
-              <div class="image"
-                style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/person_2.jpg');">
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, at! Atque totam
-                    obcaecati veniam eius vero, similique quibusdam! Sunt sequi, nemo. Quam consequuntur ipsum
-                    suscipit repellat molestiae laboriosam, incidunt!&rdquo;</p>
-
-                  <div class="author">&mdash; Julia Smith</div>
-                </blockquote>
+              <div class="card-body">
+                <div class="t-card-content p-2">
+                  <span class="t-subtitle">DEFAULT NAME</span>
+                  <h3>Davei Luace</h3>
+                  <span class="t-span">Chief Operating Manager</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="my-5 text-center">
-            <ul class="thumbnail">
-              <li class="active"><a href="#"><img
-                    src="<?php echo get_template_directory_uri();?>/assets/img/person_1_sm.jpg" alt="Image"
-                    class="img-fluid"></a></li>
-              <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/person_2_sm.jpg"
-                    alt="Image" class="img-fluid"></a></li>
-              <li><a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/img/person_3_sm.jpg"
-                    alt="Image" class="img-fluid"></a></li>
-            </ul>
+          <div class="testimonial-content"
+            style="width: 40rem; background-color: rgba(0,0,0,0.2); box-shadow:10px 10px 19px #131520, -10px -10px 19px #1c1f30;">
+            <div class="t-c-area p-4">
+              <h3> Android App Development</h3>
+              <span>via Upwork - Mar 4, 2015 - Aug 30,2021</span>
+              <div class="t-rating d-inline-block">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+              </div>
+              <div class="border-bottom t-separator ">
+
+              </div>
+              <div class="t-content">
+                <p>
+                  When managment is so important. Ut tincidunt est ac dolor aliquam
+                  sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                  hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                </p>
+              </div>
+
+            </div>
           </div>
+        </div>
+        <div class="testimonial-section d-flex ">
+          <div class="testimonial-card">
+            <div class="card border-0 rounded"
+              style="width: 25rem; background-color: rgba(0,0,0,0.2); box-shadow:10px 10px 19px #131520, -10px -10px 19px #1c1f30;">
+              <div class="t-card-img m-4">
+                <img class="card-img-top"
+                  src="<?php echo get_template_directory_uri();?>/assets/img/final-home--5th.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <div class="t-card-content p-2">
+                  <span class="t-subtitle">DEFAULT NAME</span>
+                  <h3>Davei Luace</h3>
+                  <span class="t-span">Chief Operating Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-content"
+            style="width: 40rem; background-color: rgba(0,0,0,0.2); box-shadow:10px 10px 19px #131520, -10px -10px 19px #1c1f30;">
+            <div class="t-c-area p-4">
+              <h3> Android App Development</h3>
+              <span>via Upwork - Mar 4, 2015 - Aug 30,2021</span>
+              <div class="t-rating d-inline-block">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/t-rating.png" alt="rating image" alt="">
+              </div>
+              <div class="border-bottom t-separator ">
+
+              </div>
+              <div class="t-content">
+                <p>
+                  When managment is so important. Ut tincidunt est ac dolor aliquam
+                  sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                  hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
 <!-- Contact Section -->
 <section class="h-100 ">
   <div class="container py-5 h-100">
@@ -872,6 +902,5 @@
     </div>
   </div>
 </section>
-
 
 <?php get_footer(); ?>

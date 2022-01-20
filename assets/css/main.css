@@ -14,11 +14,12 @@ body {
 .py-6 {
   padding: 10rem 0;
 }
-.active{
-  color: #ff014f ;
+
+.active2{
+  color: #ff014f;
   background: linear-gradient(145deg, #202336, #131520);
   box-shadow: 10px 10px 19px #131520,
-  -10px -10px 19px #1c1f30;
+    -10px -10px 19px #1c1f30;
 }
 p,
 a {
@@ -62,6 +63,7 @@ h2 {
   font-size: 45px;
   color: #fff;
 }
+
 /* resume progressbar */
 .progressbar {
   width: 100%;
@@ -71,8 +73,9 @@ h2 {
   position: relative;
   background-color: #f4f4f4;
 }
-.single-progressbar .title{
-  color: #c3cedd ;
+
+.single-progressbar .title {
+  color: #c3cedd;
 }
 
 .proggress {
@@ -89,6 +92,7 @@ h2 {
   font-size: 13px;
   color: #c3cedd;
 }
+
 /*
     Default Style
 */
@@ -96,13 +100,13 @@ h2 {
 
 
 .single-progressbar .title {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
 }
 
 .single-progressbar {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -286,7 +290,7 @@ header .active {
 /* =================== Banner End  ===================*/
 
 /* About Section */
-#about .about-main-title {}
+/* #about .about-main-title {} */
 
 #about .about-main-title span {
   color: #f9004d;
@@ -370,9 +374,9 @@ header .active {
   transition: .4s;
 }
 
-.about-box-inner .a-b-c-read-more-btn:hover {
-  /* display: block; */
-}
+/* .about-box-inner .a-b-c-read-more-btn:hover {
+  display: block;
+} */
 
 
 
@@ -494,7 +498,7 @@ header .active {
 
 /*====================== Resume Section ==========================*/
 
-#resume {}
+/* #resume {} */
 
 #resume span {
   color: #ff014f;
@@ -726,201 +730,120 @@ header .active {
   transform: scale(1.1);
 }
 
-/*================== latest post end  =====================*/
 
-/* Testimonial */
 
-#testimonial {
-  margin: 4em 0
+
+
+/*================= Testimonial Section ================= */
+
+#testimonial .t-card-img {
+  overflow: hidden;
+  border-radius: 5px;
 }
 
-.slider-92911 {
+#testimonial .testimonial-card img {
+  transition: transform .2s;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#testimonial .testimonial-card img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.testimonial-card .t-card-content .t-subtitle {
+  font-size: 12px;
+  color: #f9004d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.testimonial-card .t-card-content h3 {
+  font-size: 26px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  line-height: 34px;
+  color: #fff;
+}
+.testimonial-card .t-card-content .t-span {
+  font-size: 16px;
+  color: #b9c2cf;
+}
+.testimonial-section .testimonial-content{
+  margin: 9.5rem 5rem;
+  border-radius: 5px;
+}
+.testimonial-section .testimonial-content h3{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #c4cfde;
+}
+
+.testimonial-section .testimonial-content span{
+  color: #b9c2cf;
+}
+.testimonial-section .testimonial-content .t-rating{}
+.testimonial-section .testimonial-content p{
+  color: #b9c2cf;
+}
+.t-c-area{
   position: relative;
 }
 
-/* Carousel 4*/
-.testimony-29101 .image {
-  width: 40%;
+.testimonial-section .testimonial-content .t-separator::before{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: #181a1d;
+  left: -80px;
+  z-index: -1;
+  top: 66px;
+}
+
+element.style {
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+ 
+  color: #fff;
+  width: 50px;
+}
+.testimonial-section .testimonial-content ::after{
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 0;
+  top: -130px;
+  background: transparent;
+  background-image: url(../img/quote.png);
+  /* background: red; */
   background-size: cover;
+  z-index: -1;
+  opacity: 0.2;
+  background-repeat: no-repeat;
   background-position: center center;
 }
-
-@media (max-width: 991.98px) {
-  .testimony-29101 .image {
-    height: 300px;
-  }
+.testimonial-section .testimonial-content .border-bottom{
+ margin: 2rem 0;
+ border-bottom: 1px solid #141518 !important;
 }
 
-.testimony-29101 .text {
-  width: 60%;
-  padding: 7rem 4rem;
-}
 
-.testimony-29101 .text blockquote {
-  position: relative;
-
-  font-size: 20px;
-}
-
-.testimony-29101 .text blockquote p {
-  color: #fff;
-  line-height: 1.8;
-}
-
-.testimony-29101 .text blockquote .author {
-  font-size: 16px;
-  letter-spacing: .1rem;
-  position: absolute;
-  bottom: -30px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-@media (max-width: 991.98px) {
-
-  .testimony-29101 .image,
-  .testimony-29101 .text {
-    width: 100%;
-    display: block !important;
-  }
-}
-
-.slide-one-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 991.98px) {
-  .slide-one-item .owl-nav {
-    display: none;
-  }
-}
-
-.slide-one-item .owl-nav .owl-prev,
-.slide-one-item .owl-nav .owl-next {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #000;
-}
-
-.slide-one-item .owl-nav .owl-prev span,
-.slide-one-item .owl-nav .owl-next span {
-  font-size: 30px;
-}
-
-.slide-one-item .owl-nav .owl-prev:hover,
-.slide-one-item .owl-nav .owl-next:hover {
-  color: #000;
-}
-
-.slide-one-item .owl-nav .owl-prev:active,
-.slide-one-item .owl-nav .owl-prev:focus,
-.slide-one-item .owl-nav .owl-next:active,
-.slide-one-item .owl-nav .owl-next:focus {
-  outline: none;
-}
-
-.slide-one-item .owl-nav .owl-prev {
-  left: 20px;
-}
-
-.slide-one-item .owl-nav .owl-next {
-  right: 20px;
-}
-
-.slide-one-item .owl-dots {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-}
-
-.slide-one-item .owl-dots .owl-dot {
-  display: inline-block;
-}
-
-.slide-one-item .owl-dots .owl-dot>span {
-  -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-  -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-  transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
-  display: inline-block;
-  width: 15px;
-  height: 3px;
-  background: rgba(0, 123, 255, 0.4);
-  margin: 3px;
-}
-
-.slide-one-item .owl-dots .owl-dot.active>span {
-  width: 15px;
-  background: #007bff;
-}
-
-.thumbnail {
-  right: -15%;
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  bottom: 80px;
-
-  transform: translateY(50%) translateX(-50%);
-  z-index: 99;
-}
-
-.thumbnail li a {
-  display: block;
-  margin: 4px;
-}
-
-.thumbnail li a img {
-  width: 50px;
-  border-radius: 50%;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.thumbnail li.active a img {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* quotes */
-.fp__testimonial_quote {
-
-  position: absolute;
-  right: -8%;
-  z-index: 4;
-  padding: 25px;
-  font-size: 2em;
-  line-height: 1;
-  background-image: linear-gradient(-30deg, #007cf5, #8d7dfe 88%, #8c7cff 0);
-  box-shadow: 26px 29px 40px 0 rgb(0 0 0 / 13%);
-  border-radius: 16px;
-
-}
-
-.flaticon-quote-left::before {
-  content: "\f10e";
-  color: #fff;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 800;
-}
-
-/*================= Testimonial End ================= */
-
-/* contact start  */
+/* =====================contact start ======================== */
 
 input {
   outline: none;
@@ -1174,7 +1097,6 @@ input {
 
 
 /* #TITLE */
-
 .title {
   font-size: 24px;
   color: #525252;
@@ -1359,13 +1281,11 @@ input {
   color: #f1f1f1;
 }
 
-
-
 /* ================ contact end ====================*/
 
 /* Footer Start */
 
-.new_footer_area {}
+/* .new_footer_area {} */
 
 
 .new_footer_top {
