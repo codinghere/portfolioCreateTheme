@@ -11,6 +11,15 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.py-6 {
+  padding: 10rem 0;
+}
+.active{
+  color: #ff014f ;
+  background: linear-gradient(145deg, #202336, #131520);
+  box-shadow: 10px 10px 19px #131520,
+  -10px -10px 19px #1c1f30;
+}
 p,
 a {
   font-weight: 400;
@@ -30,7 +39,7 @@ a {
   z-index: -1;
 }
 
-#particles-js-two {
+/* #particles-js-two {
   position: absolute;
   width: 80%;
   height: 100vh;
@@ -39,7 +48,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
+} */
 
 
 h1 {
@@ -53,6 +62,51 @@ h2 {
   font-size: 45px;
   color: #fff;
 }
+/* resume progressbar */
+.progressbar {
+  width: 100%;
+  border-radius: 5px !important;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  position: relative;
+  background-color: #f4f4f4;
+}
+.single-progressbar .title{
+  color: #c3cedd ;
+}
+
+.proggress {
+  height: 8px;
+  width: 10px;
+  background-color: #ff0;
+}
+
+.percentCount {
+  float: right;
+  margin-top: -42px;
+  clear: both;
+  font-weight: 700;
+  font-size: 13px;
+  color: #c3cedd;
+}
+/*
+    Default Style
+*/
+
+
+
+.single-progressbar .title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.single-progressbar {
+    margin-bottom: 30px;
+}
+
+
+
 
 /* contact */
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
@@ -232,34 +286,97 @@ header .active {
 /* =================== Banner End  ===================*/
 
 /* About Section */
+#about .about-main-title {}
+
+#about .about-main-title span {
+  color: #f9004d;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+
+#about .about-main-title h3 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
 .about-box {
   text-align: left;
   padding: 35px 50px 35px 50px;
   transition: 0.5s all ease-in-out;
   position: relative;
   border-radius: 10px;
-  background: linear-gradient(145deg, #131520, #1c1f30);
-  ;
-  /* box-shadow: 10px 10px 19px #1c1e22, */
-  /* -10px -10px 19px #262a2e; */
+  box-shadow: 10px 10px 19px #131520,
+    -10px -10px 19px #1c1f30;
   position: relative;
   z-index: 1;
   height: 100%;
+  transition: .3s;
 }
 
-.about-box .a-b-c-title h4 {
-  font-family: var(--color-primary);
+.about-box:hover {
+  background: linear-gradient(145deg, #202336, #131520);
+}
+
+.about-box-inner {
+  transition: transform 250ms;
+}
+
+.about-box-inner:hover {
+  transform: translateY(-20px);
+}
+
+#about .a-box-ic {
+  margin-bottom: 29px;
+}
+
+#about .a-box-ic:hover {
+  transition: translateY(-20px);
+
+}
+
+#about .a-box-ic i {
+  width: 50px;
+  height: auto;
+  color: #f9004d;
+}
+
+#about .a-box-ic i:hover {
+  transition: translateY(-20px);
+}
+
+.a-box-content .a-b-c-des h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 20px;
-  color: var(--color-lightn);
+  color: #fff;
 }
 
-/*====================== about Section End  ==========================*/
+.a-box-content .a-b-c-des p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  /* margin-bottom: 22px; */
+}
+
+.about-box-inner .a-b-c-read-more-btn {
+  /* display: none; */
+  transition: .4s;
+}
+
+.about-box-inner .a-b-c-read-more-btn:hover {
+  /* display: block; */
+}
 
 
-/* Service Section */
+
+/*======================  Service Section   ==========================*/
 #services {
   padding: 10em 0;
   /* background: red; */
@@ -372,10 +489,111 @@ header .active {
 
 }
 
-/*======================= Service Section End  ======================*/
 
-/* latest post start from here */
 
+
+/*====================== Resume Section ==========================*/
+
+#resume {}
+
+#resume span {
+  color: #ff014f;
+}
+
+#resume .time-line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.time-line .block {
+  width: calc(50% - 20px);
+  margin: 10px 0;
+  padding: 30px;
+  box-shadow: 10px 10px 19px #131520,
+    -10px -10px 19px #1c1f30;
+  position: relative;
+}
+
+.block-inner::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 5px;
+  right: 100%;
+  top: 43px;
+  transform: translateY(-7px);
+  background: #17191c;
+  z-index: 0;
+}
+
+.time-line .block::before {
+  content: "";
+  position: absolute;
+  background-color: #17191c;
+  width: 5px;
+  height: 120%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.time-line .block::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #BB2D3B;
+  left: -26px;
+  top: 30px;
+  border: 4px solid #17191c;
+  border-radius: 50%;
+}
+
+#resume .resume-rating span {
+  color: #ff014f !important;
+
+}
+
+#resume .block-heading {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #1a1d23;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#resume .block-heading h3 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 500;
+
+}
+
+#resume .block-heading span {
+  color: #7c838e;
+  font-size: 14px;
+}
+
+#resume .resume-rating {
+  display: inline-block;
+  padding: 2px 15px;
+  box-shadow: 10px 10px 19px #131520,
+    -10px -10px 19px #1c1f30;
+  margin-left: 35%;
+  border-radius: 6px;
+}
+
+#resume .resume-box-title p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+
+/*======================= Latest Post Section ======================*/
 
 
 #latest-project {

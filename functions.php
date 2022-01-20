@@ -86,6 +86,7 @@ function portfolio_assets()
 	wp_enqueue_style('bootstrap-select-min', '//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css');
 	wp_enqueue_style('google-fonts', '//fonts.googleapis.com');
 	wp_enqueue_style('google-fonts-two', '//fonts.gstatic.com');
+	wp_enqueue_style('resume-progress', '//jquery.lineProgressbar.css');
 	wp_enqueue_style('google-fonts-three', '//fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
 	wp_enqueue_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 	wp_enqueue_style('owl-carousel-min', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
@@ -107,9 +108,14 @@ function portfolio_assets()
 	wp_enqueue_script('code-icon', '//code.iconify.design/2/2.1.1/iconify.min.js', array(), '1.0', true);
 	wp_enqueue_script('platform-', '//apps.elfsight.com/p/platform.js', array(), '1.0', true);
 	wp_enqueue_script('jQuery-min', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min', array(), '1.0', true);
+
+	wp_enqueue_script('jQuery-min-two', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '1.0', true);
+	wp_enqueue_script('jQuery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js', array(), '1.0', true);
+	wp_enqueue_script('jQuery-waypoints', '//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js', array(), '1.0', true);
+
 	wp_enqueue_script('owl-carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), '1.0', true);
 	wp_enqueue_script('select-two-min', get_theme_file_uri('/assets/js/select2.min.js'), ['jquery'], 'default', true);
-	wp_enqueue_script('particles', get_theme_file_uri('/assets/js/particles.js'), ['jquery'], 'default', true);
+	// wp_enqueue_script('particles', get_theme_file_uri('/assets/js/particles.js'), ['jquery'], 'default', true);
 	wp_enqueue_script('portfolio', get_theme_file_uri('/assets/js/main.js'), ['jquery'], '1.1', true);
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
